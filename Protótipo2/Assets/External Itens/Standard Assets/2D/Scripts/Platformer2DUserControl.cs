@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets._2D
@@ -42,8 +43,8 @@ namespace UnityStandardAssets._2D
             {
                 m_Character.m_MaxSpeed = 8f;
                 plat.velocidadeMov = 1.2f;
-                buttonUp.SetActive(false);
-                buttonDown.SetActive(false);
+                buttonUp.GetComponent<Button>().interactable = false;
+                buttonDown.GetComponent<Button>().interactable = false;
                 if (h > 0)
                     plat.controleBaixo = 1;
 
@@ -59,8 +60,8 @@ namespace UnityStandardAssets._2D
                 plat.controleBaixo = plat.controleCima = 0;
                 plat.velocidadeMov = 2.5f;
                 m_Character.m_MaxSpeed = 10f;
-                buttonUp.SetActive(true);
-                buttonDown.SetActive(true);
+                buttonUp.GetComponent<Button>().interactable = true;
+                buttonDown.GetComponent<Button>().interactable = true;
                 plat.controle = false;
             }
         }

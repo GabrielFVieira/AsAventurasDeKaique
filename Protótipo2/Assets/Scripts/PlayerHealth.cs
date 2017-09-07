@@ -41,6 +41,8 @@ public class PlayerHealth : MonoBehaviour
 
     public float delay = 1;
 
+    public GameObject box;
+
     // Use this for initialization
     void Start()
     {
@@ -108,8 +110,11 @@ public class PlayerHealth : MonoBehaviour
 
 
         //ENEMY's IS DEAD
-        if (enemyHealth.curHealth <= 0)
-            encostando = false;
+        if (enemyHealth != null)
+        {
+            if (enemyHealth.curHealth <= 0)
+                encostando = false;
+        }
 
         //DESACTIVE ATTACK 
         if (ataque == false && animo.GetCurrentAnimatorStateInfo(0).IsName("soco"))
@@ -154,6 +159,13 @@ public class PlayerHealth : MonoBehaviour
 
                 ataque = false;
             }
+
+            if(box != null && ataque == true || box != null && chute == true)
+            {
+                box.GetComponent<Box>().i -= 1;
+                ataque = chute = false;
+
+            }
         }
     }
 
@@ -171,23 +183,43 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-			if (collision.gameObject.transform.position.x < transform.position.x && transform.localScale.x < 0) {
-				encostando = true;
-				enemyHealth = collision.gameObject.GetComponent<EnemyHealth> ();
-			} if (collision.gameObject.transform.position.x > transform.position.x && transform.localScale.x > 0) {
-				encostando = true;
-				enemyHealth = collision.gameObject.GetComponent<EnemyHealth> ();
-			} 
+            if (collision.gameObject.transform.position.x < transform.position.x && transform.localScale.x < 0)
+            {
+                encostando = true;
+                enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            }
+            if (collision.gameObject.transform.position.x > transform.position.x && transform.localScale.x > 0)
+            {
+                encostando = true;
+                enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            }
+        }
+
+        if (collision.gameObject.tag == "Box")
+        {
+            if (collision.gameObject.transform.position.x < transform.position.x && transform.localScale.x < 0)
+            {
+                box = collision.gameObject;
+            }
+            if (collision.gameObject.transform.position.x > transform.position.x && transform.localScale.x > 0)
+            {
+                box = collision.gameObject;
+            }
         }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
-		{
+        {
             encostando = false;
+            enemyHealth = null;
         }
 
+        if (collision.gameObject.tag == "Box")
+        {
+            box = null;
+        }
     }
 
     void SetHealthBar(float myHealth)
