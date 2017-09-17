@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class PlayerHealth : MonoBehaviour
 
     public GameObject box;
 
+    public Keyboard key;
+
     // Use this for initialization
     void Start()
     {
@@ -74,6 +77,26 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(key.controle == true)
+        {
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                if (pick.crounch == false && pick.CanPickUp == false)
+                {
+                    ataque = true;
+                    colliders[0].offset = new Vector2(0.45f, -0.12f);
+                    animo.SetInteger("Condição", golpe);
+                }
+            }
+
+            if (Input.GetKeyUp(KeyCode.J))
+            {
+                ataque = false;
+            }
+        }
+
+
+
 		golpe = Random.Range (3, 5);
 
         //SET PLAYER HEALTH
@@ -224,7 +247,7 @@ public class PlayerHealth : MonoBehaviour
 
     void SetHealthBar(float myHealth)
     {
-        healthBar.transform.localScale = new Vector3(myHealth, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+        healthBar.GetComponent<Image>().fillAmount = myHealth;
     }
 
     public void Attack(bool attack)

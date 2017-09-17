@@ -23,14 +23,22 @@ public class MoneyBag : MonoBehaviour {
 
         transform.Translate(vel * Time.deltaTime, 0, 0);
 
+        if(transform.position.x > player.transform.position.x + 30)
+        {
+            Destroy(gameObject);
+        }
 
+        if (transform.position.x < player.transform.position.x - 30)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerHealth>().curHealth -= 30;
+            collision.gameObject.GetComponent<PlayerHealth>().curHealth -= 25;
             Destroy(gameObject);
         }
 

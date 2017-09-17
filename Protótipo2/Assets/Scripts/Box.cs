@@ -47,13 +47,13 @@ public class Box : MonoBehaviour {
             if (random == 1)
             {
                 GameObject medkit = Instantiate(medKit) as GameObject;
-                medkit.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 0.3f, this.transform.position.z);
+                medkit.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 0.7f, this.transform.position.z);
             }
 
             if (random == 2)
             {
                 GameObject waterbottle = Instantiate(waterBottle) as GameObject;
-                waterbottle.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 0.3f, this.transform.position.z);
+                waterbottle.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 0.7f, this.transform.position.z);
             }
 
             GameObject.Find("plataformaPlayer").GetComponent<PlataformaSeguePlayer>().canWalkDown = GameObject.Find("plataformaPlayer").GetComponent<PlataformaSeguePlayer>().canWalkUp = true;

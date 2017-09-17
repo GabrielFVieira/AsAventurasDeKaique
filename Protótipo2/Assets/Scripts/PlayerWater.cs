@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerWater : MonoBehaviour {
 	public float maxWater;
@@ -34,6 +35,6 @@ public class PlayerWater : MonoBehaviour {
 
 	void SetWaterBar(float myWater)
 	{
-		waterBar.transform.localScale = new Vector3(myWater, waterBar.transform.localScale.y, waterBar.transform.localScale.z);
+		waterBar.GetComponent<Image>().fillAmount = myWater;
 	}
 }

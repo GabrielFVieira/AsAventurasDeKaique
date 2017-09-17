@@ -19,6 +19,7 @@ namespace UnityStandardAssets._2D
         public GameObject buttonDown;
         public Collider2D col;
 
+        public Keyboard key;
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
@@ -27,6 +28,12 @@ namespace UnityStandardAssets._2D
 
         private void Update()
         {
+            if(key.controle == true)
+            {
+                v = key.velY;
+                h = key.velX;
+            }
+
             if (crouch == true)
             {
                 col.transform.localEulerAngles = new Vector3(0, 0, 90);
