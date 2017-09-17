@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 69f118502f356cf4bb2db18a8643f7f5
-timeCreated: 1505382715
+timeCreated: 1505656304
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -82,25 +82,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HealthBarFill_0
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 86
-        width: 7
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: HealthBarFill_1
       rect:
         serializedVersion: 2
-        x: 10
+        x: 3
         y: 84
-        width: 401
+        width: 408
         height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -116,7 +103,7 @@ TextureImporter:
         width: 7
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
