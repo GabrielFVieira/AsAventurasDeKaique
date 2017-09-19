@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
     public string nxtLvl;
 	private void Start()
 	{
-		pauseMenu.SetActive (false);
+		//pauseMenu.SetActive (false);
 		Time.timeScale = 1;
 	}
 

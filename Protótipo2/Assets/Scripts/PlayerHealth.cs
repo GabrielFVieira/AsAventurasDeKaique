@@ -58,7 +58,7 @@ public class PlayerHealth : MonoBehaviour
         enemies = GameObject.Find("Enemies" + cam.i);
 
         hud = GameObject.Find("HUD");
-        deathMenu = GameObject.Find("DeathMenu");
+        //deathMenu = GameObject.Find("DeathMenu");
 
         player = GameObject.Find("Player");
         healthBar = GameObject.Find("PlayerHealthBar");
