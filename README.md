@@ -11,6 +11,7 @@ Os três começaram a se preparar para a missão que é acabar com a madeireira 
 Eles usam lanças e flechas para a grande batalha e tudo começa.
 Onde o objetivo principal e invadir a madeireira e dar um curto circuito nas máquinas para elas pararem de funcionar e interromper o desmatamento antes que tudo se perca para sempre e até os índios entraram em contato com os guardas florestais.
 
+
 Grupo:
 Multimídia: Angélica, Gabrielle, Juliana, Leticia, Pedro Nunes e Wanessa
 Programação: Gabriel Figueiredo e Pedro Joaquim
