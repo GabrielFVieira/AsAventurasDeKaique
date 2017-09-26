@@ -14,7 +14,8 @@ public class PlayerWin : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        if (winMenu.activeSelf == true)
+            Cursor.visible = true;
 	}
 
     void OnTriggerEnter2D(Collider2D col)
