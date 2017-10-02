@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: e8c6a27b33c5ddf459543d21593afd81
-timeCreated: 1506537792
-licenseType: Pro
+timeCreated: 1506977170
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Soco_0
@@ -88,7 +88,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5
+        y: 4
         width: 69
         height: 139
       alignment: 0
@@ -101,7 +101,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 4
+        y: 3
         width: 67
         height: 135
       alignment: 0
@@ -114,7 +114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 180
-        y: 7
+        y: 6
         width: 79
         height: 134
       alignment: 0
@@ -127,7 +127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 301
-        y: 6
+        y: 5
         width: 78
         height: 128
       alignment: 0
@@ -140,7 +140,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 407
-        y: 6
+        y: 5
         width: 135
         height: 119
       alignment: 0
@@ -152,10 +152,10 @@ TextureImporter:
       name: Soco_5
       rect:
         serializedVersion: 2
-        x: 541
+        x: 554
         y: 0
         width: 87
-        height: 125
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
