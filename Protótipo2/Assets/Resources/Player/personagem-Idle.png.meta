@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 92fd7f823defdc648ab16eba721f8935
-timeCreated: 1506537899
-licenseType: Pro
+timeCreated: 1508885573
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: personagem-Idle_0
@@ -85,7 +85,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 5
-        width: 69
+        width: 73
         height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -96,10 +96,10 @@ TextureImporter:
       name: personagem-Idle_1
       rect:
         serializedVersion: 2
-        x: 91
+        x: 96
         y: 4
-        width: 67
-        height: 135
+        width: 71
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8c6a27b33c5ddf459543d21593afd81
-timeCreated: 1506977170
+timeCreated: 1508885361
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -88,8 +88,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 69
+        y: 5
+        width: 73
         height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -100,10 +100,10 @@ TextureImporter:
       name: Soco_1
       rect:
         serializedVersion: 2
-        x: 91
-        y: 3
-        width: 67
-        height: 135
+        x: 96
+        y: 4
+        width: 72
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,10 +113,10 @@ TextureImporter:
       name: Soco_2
       rect:
         serializedVersion: 2
-        x: 180
+        x: 169
         y: 6
-        width: 79
-        height: 134
+        width: 83
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,9 +126,9 @@ TextureImporter:
       name: Soco_3
       rect:
         serializedVersion: 2
-        x: 301
-        y: 5
-        width: 78
+        x: 277
+        y: 6
+        width: 82
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,10 +139,10 @@ TextureImporter:
       name: Soco_4
       rect:
         serializedVersion: 2
-        x: 407
-        y: 5
-        width: 135
-        height: 119
+        x: 388
+        y: 6
+        width: 144
+        height: 118
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +152,10 @@ TextureImporter:
       name: Soco_5
       rect:
         serializedVersion: 2
-        x: 554
+        x: 548
         y: 0
-        width: 87
-        height: 124
+        width: 93
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

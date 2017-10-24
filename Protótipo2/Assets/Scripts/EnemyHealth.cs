@@ -13,6 +13,8 @@ public class EnemyHealth : MonoBehaviour
     public GameObject healthBarContainer;
     public PlayerHealth playerHealth;
     public bool encostando;
+    public bool encostando2;
+
     Animator animo;
 
     public AudioSource punch;
@@ -96,8 +98,12 @@ public class EnemyHealth : MonoBehaviour
         if (delta <= 0.01f && playerHealth.curHealth > 0)
         {
             animo.SetInteger("Condição", golpe);
-            playerHealth.curHealth -= 5;
 
+            if (encostando2 == true)
+            {
+                playerHealth.curHealth -= 5;
+                encostando2 = false;
+            }
             if (golpe == 4)
                 punch2.Play();
 
@@ -129,7 +135,14 @@ public class EnemyHealth : MonoBehaviour
         SetHealthBar(calc_Health);
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Body")
+        {
+            encostando2 = true;
+        }
+    }
+        void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Body")
         {
@@ -154,6 +167,7 @@ public class EnemyHealth : MonoBehaviour
         if (collision.gameObject.tag == "Body")
         {
             encostando = false;
+            encostando2 = false;
         }
     }
 

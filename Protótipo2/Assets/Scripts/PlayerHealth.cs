@@ -112,8 +112,9 @@ public class PlayerHealth : MonoBehaviour
 
             hud.SetActive(false);
 
-            if (timer >= 1.0f)
+            if (timer >= 0.41f)
             {
+                Cursor.visible = true;
                 deathMenu.SetActive(true);
                 Time.timeScale = 0;
             }
